@@ -78,10 +78,6 @@ AC_CONFIG_FILES([Makefile
                  ${SIGCXX_MODULE_NAME}-uninstalled.pc:sigc++-uninstalled.pc.in
                  cmake/Makefile
                  sigc++/Makefile
-                 examples/Makefile
-                 tests/Makefile
-                 docs/docs/Makefile
-                 docs/docs/reference/Doxyfile
                  MSVC_NMake/sigc.rc])
 
 # Copy the generated configuration headers into the MSVC NMake directory.
