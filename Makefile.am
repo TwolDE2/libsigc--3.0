@@ -17,12 +17,7 @@
 
 ACLOCAL_AMFLAGS = -I build ${ACLOCAL_FLAGS}
 
-if ENABLE_DOCUMENTATION
-doc_subdirs = docs/docs
-else
-doc_subdirs =
-endif
-SUBDIRS = sigc++ tests examples cmake $(doc_subdirs)
+SUBDIRS = sigc++ cmake 
 
 sigc_configdir = $(libdir)/$(SIGCXX_MODULE_NAME)/include
 nodist_sigc_config_HEADERS = sigc++config.h
@@ -50,11 +45,7 @@ EXTRA_DIST = \
   meson_options.txt \
   sigc++config.h.meson \
   MSVC_NMake/meson.build \
-  docs/docs/manual/meson.build \
-  docs/docs/reference/meson.build \
-  examples/meson.build \
   sigc++/meson.build \
-  tests/meson.build \
   tools/dist-cmd.py \
   tools/handle-built-files.py \
   tools/tutorial-custom-cmd.py \
