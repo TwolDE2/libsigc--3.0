@@ -34,7 +34,6 @@ AC_ARG_VAR([ACLOCAL_FLAGS], [aclocal flags, e.g. -I <macro dir>])
 
 MM_PREREQ([0.9.12])
 MM_INIT_MODULE([sigc++-3.0])
-MM_CONFIG_DOCTOOL_DIR([docs/docs])
 
 AC_PROG_CXX
 MM_AX_CXX_COMPILE_STDCXX([17],[noext],[mandatory])
@@ -42,7 +41,6 @@ MM_AX_CXX_COMPILE_STDCXX([17],[noext],[mandatory])
 AC_DISABLE_STATIC
 LT_INIT([win32-dll])
 
-MM_ARG_ENABLE_DOCUMENTATION
 MM_ARG_WITH_TAGFILE_DOC([libstdc++.tag], [mm-common-libstdc++])
 
 AC_LANG([C++])
